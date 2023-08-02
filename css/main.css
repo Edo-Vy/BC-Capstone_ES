@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;600;700&family=Pacifico&family=Source+Sans+Pro:wght@200;400;600&family=Volkhov:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .header__main {
+  background-color: #000000;
+}
+
+header .header__main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+header .header__main .container .header__nav .nav__login {
+  color: #F6F6F6;
+  margin: 0 10px;
+}
+
+header .header__main .container .header__nav .nav__reg {
+  color: #F6F6F6;
+}
+
+header .header__main .header__menu {
+  height: 75px;
+}
+
+header .header__main .header__menu .container .navbar #navbarNavAltMarkup .navbar-nav .nav-link {
+  padding: 0 10px;
+}

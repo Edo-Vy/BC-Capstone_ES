@@ -1,0 +1,49 @@
+//--- Header
+header {
+  .header__main {
+    background-color: $bg-c1-secondary;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      .header__logo {
+        img {
+        }
+      }
+      .header__nav {
+        .nav__car {
+          img {
+          }
+        }
+        .nav__login {
+          color: $text-c1-secondary;
+          margin: 0 10px;
+        }
+        .nav__reg {
+          color: $text-c1-secondary;
+        }
+      }
+    }
+    .header__menu {
+      height: 75px;
+      .container {
+        .navbar {
+          .container-fluid {
+            button {
+              span {
+              }
+            }
+          }
+          #navbarNavAltMarkup {
+            .navbar-nav {
+              .nav-link {
+                  padding: 0 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
