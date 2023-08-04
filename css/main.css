@@ -43,3 +43,37 @@ header .header__main .header__menu {
 header .header__main .header__menu .container .navbar #navbarNavAltMarkup .navbar-nav .nav-link {
   padding: 0 10px;
 }
+
+.carousels {
+  height: 530px;
+  background-image: url("../../../images/image 6.png");
+  background-size: cover;
+  background-position: right;
+}
+
+.carousels .carousel__layout .carousel__wrap .carousel__circle .carousel__circleItem {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #00000021;
+  background-color: orange;
+  margin-right: 10px;
+}
+
+.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider {
+  padding: 0 100px;
+}
+
+.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__img {
+  padding: 0 10px;
+}
+
+.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__img img {
+  width: 100%;
+}
+
+.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content {
+  top: 50px;
+  left: 65%;
+  right: 0;
+}

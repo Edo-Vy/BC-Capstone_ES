@@ -15,6 +15,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -67,7 +68,121 @@
       </div>
     </header>
     <!-- Carousel -->
-    
+    <section class="carousels">
+      <div class="carousel__layout container">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide carousel__wrap"
+        >
+          <div class="carousel-indicators carousel__circle">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="carousel__circleItem active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="carousel__circleItem"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="carousel__circleItem"
+            ></button>
+          </div>
+          <div class="carousel-inner carousel__layoutSlider">
+            <!-- item 1 -->
+            <div
+              class="carousel-item carousel__layoutItem active"
+              data-bs-interval="10000"
+            >
+              <div class="carousel__img">
+                <img
+                  src="./images/image 4.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-caption carousel__content d-none d-md-block">
+                <h5>Product name</h5>
+                <p>Product description .....</p>
+                <div class="button__buy">
+                  <button class="btn btnBuy">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div
+              class="carousel-item carousel__layoutItem"
+              data-bs-interval="2000"
+            >
+              <div class="carousel__img">
+                <img
+                  src="./images/image 4.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-caption carousel__content d-none d-md-block">
+                <h5>Product name</h5>
+                <p>Product description .....</p>
+                <div class="button__buy">
+                  <button class="btn btnBuy">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="carousel-item carousel__layoutItem">
+              <div class="carousel__img">
+                <img
+                  src="./images/image 4.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-caption carousel__content d-none d-md-block">
+                <h5>Product name</h5>
+                <p>Product description .....</p>
+                <div class="button__buy">
+                  <button class="btn btnBuy">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="btn_prev-icon" aria-hidden="true">
+              <img src="./images/Polygon 2.png" alt="" />
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="btn_next-icon" aria-hidden="true">
+              <img src="./images/Polygon 1.png" />
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- <img src="./images/image 6.png" alt="" /> -->
+    </section>
     <!-- BS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
