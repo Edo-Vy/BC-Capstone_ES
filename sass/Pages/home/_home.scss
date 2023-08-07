@@ -1,12 +1,11 @@
 .carousels {
   height: 530px;
-  // position: relative;
-  //   margin-top: 100px;
   background-image: url("../../../images/image\ 6.png");
   background-size: cover;
   background-position: right;
   .carousel__layout {
-    .carousel__wrap {
+     .carousel__wrap {
+  
       .carousel__circle {
         .carousel__circleItem {
           width: 15px;
@@ -15,16 +14,17 @@
           border: 1px solid #00000021;
           background-color: orange;
           margin-right: 10px;
+        
         }
       }
       .carousel__layoutSlider {
         padding: 0 100px;
-
         .carousel__layoutItem {
           .carousel__img {
             padding: 0 10px;
             // height: 392px;
             // width: 821px;
+
             img {
               width: 100%;
             }
