@@ -20,6 +20,8 @@ function getProductByID() {
 
         pro ={...result.data.content};
         renderProByID(pro);
+        renderProductApi(pro.relatedProducts);
+        // console.log(pro.relatedProducts);
     })
     // Xử lý thất bại
     promise.catch(function (err) {
@@ -63,4 +65,39 @@ function renderProByID(pro) {
          `;
 
   document.querySelector('.detail__main').innerHTML = html;
+}
+
+function renderProductApi(arrProduct) {
+
+    let html = '';
+    arrProduct.map((item, index) => {
+
+        if (index < 6) {
+
+            html += `
+                    <div class="card card__wrap">
+                    <div class="card__item-${item.id}">
+                        <div class="card__img">
+                        <img
+                            src="${item.image}"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        </div>
+
+                        <div class="card-body">
+                        <h5 class="card-title">${item.alias}</h5>
+                        <p class="card-text">${item.shortDescription}</p>
+                        <div class="card__des">
+                            <a href="./detail.html?product=${item.id}" onclick ="product('${item.id}')" class="btn__Buy">Buy Now</a>
+                            <p class="card__price">${item.price}</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+            `;
+        }
+      
+    })
+    document.querySelector('.product__group').innerHTML = html;
 }

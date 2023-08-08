@@ -27,9 +27,36 @@ header .header__main .container {
   height: 50px;
 }
 
+header .header__main .container .header__logo img {
+  width: 100%;
+}
+
 header .header__main .container .header__nav .nav__login {
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 300;
   color: #F6F6F6;
-  margin: 0 10px;
+  position: relative;
+}
+
+header .header__main .container .header__nav .nav__login::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  left: 0;
+  background-color: #FFFFFF;
+  bottom: -3px;
+  transform: scale(0, 1);
+  transition: linear 0.1s;
+}
+
+header .header__main .container .header__nav .nav__login:hover {
+  background-color: #F8B653;
+}
+
+header .header__main .container .header__nav .nav__login:hover::before {
+  transform: 1, 1;
 }
 
 header .header__main .container .header__nav .nav__reg {

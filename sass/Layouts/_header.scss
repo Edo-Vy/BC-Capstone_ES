@@ -9,6 +9,7 @@ header {
       height: 50px;
       .header__logo {
         img {
+          width: 100%;
         }
       }
       .header__nav {
@@ -17,8 +18,27 @@ header {
           }
         }
         .nav__login {
-          color: $text-c1-secondary;
-          margin: 0 10px;
+          padding-right: 10px;
+
+          @include text($fs-light, $fw-light, $text-c1-secondary);
+          position: relative;
+          &::before {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background-color: $bg-c1-primary;
+            bottom: -3px;
+            transform: scale(0, 1);
+            transition: linear 0.1s;
+          }
+          &:hover {
+            background-color: $bg-c2-secondary;
+            &::before {
+              transform: (1, 1);
+            }
+          }
         }
         .nav__reg {
           color: $text-c1-secondary;
@@ -38,7 +58,7 @@ header {
           #navbarNavAltMarkup {
             .navbar-nav {
               .nav-link {
-                  padding: 0 10px;
+                padding: 0 10px;
               }
             }
           }
