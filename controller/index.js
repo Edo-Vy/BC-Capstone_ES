@@ -54,7 +54,7 @@ function renderProductApi(arrProduct) {
                         <h5 class="card-title">${item.alias}</h5>
                         <p class="card-text">${item.shortDescription}</p>
                         <div class="card__des">
-                            <button class="btn__Buy">Buy Now</button>
+                            <a href="./detail.html?product=${item.id}" onclick ="product('${item.id}')" class="btn__Buy">Buy Now</a>
                             <p class="card__price">${item.price}</p>
                         </div>
                         </div>

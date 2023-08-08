@@ -78,6 +78,24 @@ header .header__main .header__menu .container .navbar #navbarNavAltMarkup .navba
   right: 0;
 }
 
+.product__detail {
+  height: 530px;
+}
+
+.product__detail .detail__wrap .detail__main .detail__thumbnail {
+  height: 355px;
+  width: 334px;
+}
+
+.product__detail .detail__wrap .detail__main .detail__thumbnail img {
+  width: 100%;
+  padding: 25px;
+}
+
+.product__detail .detail__wrap .detail__main .detail__available .detail__price {
+  color: #FC0303;
+}
+
 .product {
   margin-top: 16px;
 }
@@ -92,8 +110,6 @@ header .header__main .header__menu .container .navbar #navbarNavAltMarkup .navba
 
 .product .product__wrap .product__body .product__group {
   display: flex;
-  flex-wrap: wrap;
-  width: calc(100 / 3);
   gap: 20px;
   align-items: center;
   justify-content: center;

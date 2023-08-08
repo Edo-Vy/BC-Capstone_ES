@@ -1,0 +1,42 @@
+.product__detail{
+    height: 530px;
+    .detail__wrap{
+        // display: flex;
+        // align-items: center;
+        .detail__main{
+            .detail__thumbnail{
+                height: 355px;
+                width: 334px;
+                img{
+                    width: 100%;
+                    padding: 25px;
+                }
+            }
+            .detail__content{
+                .detail__title{
+                    h3{}
+                    p{}
+                }
+            }
+            .detail__available{
+                p{}
+                .detail__size{
+                    .btn__size{}
+                }
+                .detail__price{
+                    color: #FC0303;
+                }
+            }
+            .detail__count{
+                
+                .btn__count{}
+                p{}
+                .btn__count{}
+            }
+            .detail__cart{
+                .btn__cart{}
+            }
+        }
+        
+    }
+}

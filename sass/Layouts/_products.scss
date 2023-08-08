@@ -10,18 +10,19 @@
       margin-top: 30px;
       .product__group {
         display: flex;
-        flex-wrap: wrap;
-        width: calc(100 / 3);
+        // flex-wrap: wrap;
         gap: 20px;
+        // width: calc(100 / 3);
         align-items: center;
         justify-content: center;
         .card__wrap {
-            // height: 369px;
-            // width: 307px;
+          // height: 369px;
+          // width: 307px;
+
           .card__item {
             .card__img {
-                width: 220px;
-                height: 156px;
+              width: 220px;
+              height: 156px;
               img {
                 width: 100%;
               }

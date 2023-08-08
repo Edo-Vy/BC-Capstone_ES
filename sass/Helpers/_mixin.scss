@@ -1,1 +1,12 @@
 // mixin text
+
+@mixin text ($fs, $fw, $c){
+
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+}
+
+@mixin button() {
+    
+}
