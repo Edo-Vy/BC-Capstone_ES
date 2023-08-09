@@ -2,11 +2,12 @@
 header {
   .header__main {
     background-color: $bg-c1-secondary;
+    height: 50px;
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 50px;
+      padding: 10px 0;
       .header__logo {
         img {
           width: 100%;
@@ -18,48 +19,57 @@ header {
           }
         }
         .nav__login {
-          padding-right: 10px;
-
+          padding-right: 25px;
           @include text($fs-light, $fw-light, $text-c1-secondary);
-          position: relative;
-          &::before {
-            position: absolute;
-            content: "";
-            height: 3px;
-            width: 100%;
-            left: 0;
-            background-color: $bg-c1-primary;
-            bottom: -3px;
-            transform: scale(0, 1);
-            transition: linear 0.1s;
-          }
           &:hover {
-            background-color: $bg-c2-secondary;
-            &::before {
-              transform: (1, 1);
-            }
+            color: $text-c4-secondary;
           }
         }
         .nav__reg {
-          color: $text-c1-secondary;
+          @include text($fs-light, $fw-light, $text-c1-secondary);
+          &:hover {
+            color: $text-c4-secondary;
+          }
         }
       }
     }
-    .header__menu {
-      height: 75px;
-      .container {
-        .navbar {
-          .container-fluid {
-            button {
-              span {
-              }
+  }
+  .header__menu {
+    height: 75px;
+    .container {
+      .navbar {
+        .menu__wrap {
+          button {
+            span {
             }
           }
-          #navbarNavAltMarkup {
-            .navbar-nav {
-              .nav-link {
-                padding: 0 10px;
+        }
+        .navbar-collapse {
+          .nav__menu {
+            // padding-right: 10px;
+            a {
+              position: relative;
+              margin-left: 15px;
+              @include text($fs-base, $fw-regular, $text-c1-primary);
+              &::before {
+                width: 100%;
+                position: absolute;
+                content: "";
+                height: 2px;
+                left: 0;
+                bottom: -2px;
+                background-color: $bg-c2-secondary;
+                transform: scale(0, 1);
+                transition: linear 0.3s;
               }
+              &:hover {
+                color: $text-c4-secondary;
+                &::before {
+                  transform: scale(1, 1);
+                }
+              }
+            }
+            .nav-link {
             }
           }
         }
