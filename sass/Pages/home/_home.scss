@@ -1,20 +1,18 @@
 .carousels {
   height: 530px;
-  background-image: url("../../../images/image\ 6.png");
-  background-size: cover;
-  background-position: right;
-  .carousel__layout {
-     .carousel__wrap {
-  
+  position: relative;
+  margin-top: 100px;
+  .carousel-layout {
+    .carousel__wrap {
       .carousel__circle {
+        bottom: -95px;
         .carousel__circleItem {
           width: 15px;
           height: 15px;
           border-radius: 50%;
           border: 1px solid #00000021;
-          background-color: orange;
-          margin-right: 10px;
-        
+          background-color: $bg-c2-secondary;
+          margin-right: 20px;
         }
       }
       .carousel__layoutSlider {
@@ -22,31 +20,44 @@
         .carousel__layoutItem {
           .carousel__img {
             padding: 0 10px;
-            // height: 392px;
-            // width: 821px;
-
+            overflow: hidden;
             img {
               width: 100%;
             }
           }
           .carousel__content {
-            top: 50px;
+            top: 20px;
             left: 65%;
-            right: 0;
+        
             h5 {
+              @include text($fs-3xl, $fw-light, $text-c1-primary);
             }
             p {
+              @include text($fs-base, $fw-light, $text-c1-primary);
             }
             .button__buy {
+              margin: 40px 0;
               .btnBuy {
+                @include button(
+                  $fs-base,
+                  $fw-light,
+                  $bg-c2-secondary,
+                  $text-c1-secondary
+                );
               }
+            }
+            .carousel__icon {
+              padding: 0 20px;
             }
           }
         }
       }
     }
   }
-  //   img{
-  //       width: 100%;
-  //   }
+  .carousel-bg {
+    position: absolute;
+    bottom: 40px;
+    z-index: -3;
+    width: 100%;
+  }
 }

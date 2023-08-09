@@ -69,7 +69,7 @@
     </header>
     <!-- Carousel -->
     <section class="carousels">
-      <div class="carousel__layout container">
+      <div class="carousel-layout container">
         <div
           id="carouselExampleDark"
           class="carousel carousel-dark slide carousel__wrap"
@@ -98,90 +98,98 @@
               class="carousel__circleItem"
             ></button>
           </div>
-          <div class="carousel-inner carousel__layoutSlider">
-            <!-- item 1 -->
-            <div
-              class="carousel-item carousel__layoutItem active"
-              data-bs-interval="10000"
-            >
-              <div class="carousel__img">
-                <img
-                  src="./images/image 4.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-caption carousel__content d-none d-md-block">
-                <h5>Product name</h5>
-                <p>Product description .....</p>
-                <div class="button__buy">
-                  <button class="btn btnBuy">Buy Now</button>
+          <div class="carousel-inner carousel-layout-pd carousel__layoutSlider">
+            <div class="carousel-overflow overflow-hidden">
+              <!-- item 1 -->
+              <div
+                class="carousel-item carousel__layoutItem row active"
+                data-bs-interval="10000"
+              >
+                <div class="carousel__img col-12 col-lg-9">
+                  <img
+                    src="./images/image 4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div
+                  class="carousel-caption carousel__content d-none d-md-block col-12 col-lg-3"
+                >
+                  <h5>Product name</h5>
+                  <p>Product description .....</p>
+                  <div class="button__buy">
+                    <button class="btn btnBuy">Buy Now</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- item 2 -->
-            <div
-              class="carousel-item carousel__layoutItem"
-              data-bs-interval="2000"
-            >
-              <div class="carousel__img">
-                <img
-                  src="./images/image 4.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-caption carousel__content d-none d-md-block">
-                <h5>Product name</h5>
-                <p>Product description .....</p>
-                <div class="button__buy">
-                  <button class="btn btnBuy">Buy Now</button>
+              <!-- item 2 -->
+              <div
+                class="carousel-item carousel__layoutItem row"
+                data-bs-interval="2000"
+              >
+                <div class="carousel__img col-12 col-lg-9">
+                  <img
+                    src="./images/image 4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div
+                  class="carousel-caption carousel__content d-none d-md-block col-12 col-lg-3"
+                >
+                  <h5>Product name</h5>
+                  <p>Product description .....</p>
+                  <div class="button__buy">
+                    <button class="btn btnBuy">Buy Now</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- item 3 -->
-            <div class="carousel-item carousel__layoutItem">
-              <div class="carousel__img">
-                <img
-                  src="./images/image 4.png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-caption carousel__content d-none d-md-block">
-                <h5>Product name</h5>
-                <p>Product description .....</p>
-                <div class="button__buy">
-                  <button class="btn btnBuy">Buy Now</button>
+              <!-- item 3 -->
+              <div class="carousel-item carousel__layoutItem row">
+                <div class="carousel__img col-12 col-lg-9">
+                  <img
+                    src="./images/image 4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div
+                  class="carousel-caption carousel__content d-none d-md-block col-12 col-lg-3"
+                >
+                  <h5>Product name</h5>
+                  <p>Product description .....</p>
+                  <div class="button__buy">
+                    <button class="btn btnBuy">Buy Now</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            class="carousel-control-prev justify-content-start"
             type="button"
             data-bs-target="#carouselExampleDark"
             data-bs-slide="prev"
           >
-            <span class="btn_prev-icon" aria-hidden="true">
+            <span class="carousel__icon prev-icon" aria-hidden="true">
               <img src="./images/Polygon 2.png" alt="" />
             </span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            class="carousel-control-next justify-content-end"
             type="button"
             data-bs-target="#carouselExampleDark"
             data-bs-slide="next"
           >
-            <span class="btn_next-icon" aria-hidden="true">
+            <span class="carousel__icon next-icon" aria-hidden="true">
               <img src="./images/Polygon 1.png" />
             </span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
-      <!-- <img src="./images/image 6.png" alt="" /> -->
+      <img class="carousel-bg" src="./images/image 6.png" alt="" />
     </section>
     <!-- -Product Feature - -->
     <section class="product">
@@ -190,15 +198,17 @@
           <h3>-Product Feature -</h3>
         </div>
         <div class="product__body">
-          <div class="product__group">
+          <div class="product__group row">
             <!-- item 1 -->
-          
-            <!--  -->
 
+            <!--  -->
           </div>
         </div>
       </div>
     </section>
+    <!--  -->
+   
+ 
     <!-- BS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -219,6 +229,6 @@
     ></script>
     <!-- models -->
     <!-- controller -->
-    <script  src="./controller/index.js"></script>
+    <script src="./controller/index.js"></script>
   </body>
 </html>

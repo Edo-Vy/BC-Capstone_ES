@@ -87,36 +87,73 @@ header .header__menu .container .navbar .navbar-collapse .nav__menu a:hover::bef
 
 .carousels {
   height: 530px;
-  background-image: url("../../../images/image 6.png");
-  background-size: cover;
-  background-position: right;
+  position: relative;
+  margin-top: 100px;
 }
 
-.carousels .carousel__layout .carousel__wrap .carousel__circle .carousel__circleItem {
+.carousels .carousel-layout .carousel__wrap .carousel__circle {
+  bottom: -95px;
+}
+
+.carousels .carousel-layout .carousel__wrap .carousel__circle .carousel__circleItem {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: 1px solid #00000021;
-  background-color: orange;
-  margin-right: 10px;
+  background-color: #F8B653;
+  margin-right: 20px;
 }
 
-.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider {
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider {
   padding: 0 100px;
 }
 
-.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__img {
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__img {
   padding: 0 10px;
+  overflow: hidden;
 }
 
-.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__img img {
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__img img {
   width: 100%;
 }
 
-.carousels .carousel__layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content {
-  top: 50px;
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content {
+  top: 20px;
   left: 65%;
-  right: 0;
+}
+
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content h5 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content .button__buy {
+  margin: 40px 0;
+}
+
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content .button__buy .btnBuy {
+  font-size: 20px;
+  font-weight: 300;
+  background-color: #F8B653;
+  color: #F6F6F6;
+}
+
+.carousels .carousel-layout .carousel__wrap .carousel__layoutSlider .carousel__layoutItem .carousel__content .carousel__icon {
+  padding: 0 20px;
+}
+
+.carousels .carousel-bg {
+  position: absolute;
+  bottom: 40px;
+  z-index: -3;
+  width: 100%;
 }
 
 .product__detail {
@@ -145,27 +182,48 @@ header .header__menu .container .navbar .navbar-collapse .nav__menu a:hover::bef
   text-align: center;
 }
 
-.product .product__wrap .product__body {
-  margin-top: 30px;
+.product .product__wrap .product__title h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
 }
 
-.product .product__wrap .product__body .product__group {
+.product .product__wrap .product__body {
+  margin-top: 50px;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card {
+  min-height: 450px;
+  transition: all 300ms ease-in-out;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item {
+  padding: 20px;
+  background-color: #FFFFFF;
   display: flex;
-  gap: 20px;
-  align-items: center;
   justify-content: center;
 }
 
-.product .product__wrap .product__body .product__group .card__wrap .card__item .card__img {
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card__img {
   width: 220px;
   height: 156px;
 }
 
-.product .product__wrap .product__body .product__group .card__wrap .card__item .card__img img {
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card__img img {
   width: 100%;
 }
 
-.product .product__wrap .product__body .product__group .card__wrap .card__item .card-body .card__des {
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body h5 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body .card__des {
   display: flex;
   align-items: center;
   justify-content: space-between;
