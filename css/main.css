@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 header .header__main {
   background-color: #000000;
   height: 50px;
@@ -192,7 +196,21 @@ header .header__menu .container .navbar .navbar-collapse .nav__menu a:hover::bef
   margin-top: 50px;
 }
 
+.product .product__wrap .product__body .product__group {
+  flex-wrap: wrap;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap {
+  width: calc(100% / 3);
+  padding: 0 15px;
+  border: none;
+  position: relative;
+}
+
 .product .product__wrap .product__body .product__group .card__wrap .product__card {
+  padding: 0 15px;
+  background-color: #F8F8F8;
+  width: 100%;
   min-height: 450px;
   transition: all 300ms ease-in-out;
 }
@@ -203,28 +221,65 @@ header .header__menu .container .navbar .navbar-collapse .nav__menu a:hover::bef
 
 .product .product__wrap .product__body .product__group .card__wrap .product__card .card__item {
   padding: 20px;
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: center;
+  background-color: #F8F8F8;
 }
 
 .product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card__img {
   width: 220px;
   height: 156px;
+  margin-left: 35px;
+  margin-bottom: 25px;
 }
 
 .product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card__img img {
   width: 100%;
 }
 
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body {
+  margin-bottom: 10px;
+}
+
 .product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body h5 {
   font-size: 24px;
   font-weight: 300;
   color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
 }
 
 .product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body .card__des {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body .card__des .btn__Buy {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+  background-color: #E1B067;
+  padding: 10px 56px;
+  transition: linear 0.3s;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body .card__des .btn__Buy:hover {
+  color: #CBC9C9;
+}
+
+.product .product__wrap .product__body .product__group .card__wrap .product__card .card__item .card-body .card__des p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #DEDDDC;
+  padding: 0 37px;
+  padding-top: 10px;
+  margin-bottom: 0;
 }

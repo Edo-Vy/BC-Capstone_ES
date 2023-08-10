@@ -40,8 +40,8 @@ function renderProductApi(arrProduct) {
         if (index < 6) {
 
             html += `
-                <div class="card card__wrap col-4">
-                    <a href="./detail.html?product=${item.id}" class="product__card" onclick ="product('${item.id}')>
+                <div class="card card__wrap">
+                    <a href="./detail.html?product=${item.id}" class="product__card" onclick ="product('${item.id}'")>
                         <div class="card__item card__item-${item.id}">
                              <div class="card__img">
                                 <img
@@ -55,7 +55,7 @@ function renderProductApi(arrProduct) {
                                  <p class="card-text">${item.shortDescription}</p>
                                  <div class="card__des">
                                      <button class="btn__Buy">Buy Now</button>
-                                     <p class="card__price">${item.price}</p>
+                                     <p class="card__price">${item.price}$</p>
                                  </div>
                              </div>
                          </div>
