@@ -37,7 +37,7 @@ function renderProductApi(arrProduct) {
     let html = '';
     arrProduct.map((item, index) => {
 
-        if (index < 6) {
+        if (index < 9) {
 
             html += `
                 <div class="card card__wrap">

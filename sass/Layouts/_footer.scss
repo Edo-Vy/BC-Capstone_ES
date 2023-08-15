@@ -1,0 +1,40 @@
+.footer {
+    margin-top: 130px;
+    .footer-group {
+      background-color: $bg-c7-secondary;
+      padding: 20px 0;
+  
+      .footer-item {
+        h2 {
+          @include text($fs-xl, $fw-medium, $text-c1-primary);
+        }
+        ul {
+          margin-top: 20px;
+          padding-left: 0;
+          li {
+            list-style: none;
+            margin-bottom: 5px;
+            a {
+              @include text($fs-light, $fw-light, $text-c1-primary);
+              transition: all 0.3s;
+              &:hover {
+                color: $text-c4-secondary;
+              }
+            }
+          }
+          .footer-item-text-red {
+            color: $text-c2-seconday;
+          }
+        }
+      }
+      .footer-bd {
+        border-right: 1px solid $bg-c8-secondary;
+      }
+    }
+    .footer-bottom {
+      background-color: $bg-c4-secondary;
+    }
+  }
+  
+  
+  

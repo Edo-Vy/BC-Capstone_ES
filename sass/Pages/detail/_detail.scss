@@ -1,42 +1,122 @@
-.product__detail{
-    height: 530px;
-    .detail__wrap{
-        // display: flex;
-        // align-items: center;
-        .detail__main{
-            .detail__thumbnail{
-                height: 355px;
-                width: 334px;
-                img{
-                    width: 100%;
-                    padding: 25px;
-                }
-            }
-            .detail__content{
-                .detail__title{
-                    h3{}
-                    p{}
-                }
-            }
-            .detail__available{
-                p{}
-                .detail__size{
-                    .btn__size{}
-                }
-                .detail__price{
-                    color: #FC0303;
-                }
-            }
-            .detail__count{
-                
-                .btn__count{}
-                p{}
-                .btn__count{}
-            }
-            .detail__cart{
-                .btn__cart{}
-            }
+.product__detail {
+  height: 530px;
+  .detail__wrap {
+    // display: flex;
+    // align-items: center;
+    .detail__main {
+      .detail__thumbnail {
+        height: 355px;
+        width: 334px;
+        background-color: $bg-c7-secondary;
+        margin-right: 65px;
+        img {
+          width: 100%;
+          padding: 25px;
         }
-        
+      }
+      .detail__content {
+        .detail__title {
+          h3 {
+            @include text($fs-2xl, $fw-light, $text-c1-primary);
+            word-spacing: 2px;
+          }
+          p {
+            @include text($fs-light, $fw-regular, $text-c6-secondary);
+            word-spacing: 2px;
+          }
+        }
+      }
+      .detail__available {
+        p {
+          @include text($fs-xl, $fw-medium, $text-c3-secondary);
+          word-spacing: 2px;
+        }
+        .detail__size {
+          .btn__size {
+            margin-right: 15px;
+            border-radius: 0px;
+            @include button(
+              $fs-xl,
+              $fw-bold,
+              $bg-c8-secondary,
+              $text-c7-secondary
+            );
+          }
+        }
+        .detail__price {
+          margin-top: 10px;
+          @include text($fs-2xl, $fw-bold, $text-c2-seconday);
+          word-spacing: 2px;
+        }
+      }
+      .detail__count {
+        width: 50%;
+        text-align: center;
+        height: 55px;
+        padding-right: 150px;
+        margin-left: 2px;
+        .btn__count__plu {
+          width: 50px;
+          text-align: center;
+          height: 50px;
+          background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+          border: none;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
+          color: $text-c8-secondary;
+          border-radius: 0px;
+        }
+        p {
+          width: 20%;
+          height: 36px;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 50px;
+          color: $text-c1-primary;
+        }
+        .btn__count__mini {
+          text-align: center;
+          width: 50px;
+          height: 50px;
+          background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+          border: none;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 36px;
+          border-radius: 0px;
+          color: $text-c8-secondary;
+        }
+      }
+      .detail__cart {
+        margin-top: 7px;
+
+        .btn__cart {
+          width: 175px;
+          height: 64px;
+          border: none;
+          border-radius: 0px;
+          background: linear-gradient(
+            270deg,
+            rgba(62, 32, 248, 0.9) 5.14%,
+            #d017ee 89.71%
+          );
+          font-weight: $fw-medium;
+          font-size: $fs-xl;
+          line-height: 10px;
+          color: $text-c9-secondary;
+          transition: all 0.3s;
+
+          &:hover {
+            background: linear-gradient(
+              270deg,
+              rgba(18, 5, 104, 0.9) 5.14%,
+              #500b5b 89.71%
+            );
+          }
+        }
+      }
     }
+  }
 }

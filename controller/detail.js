@@ -17,11 +17,13 @@ function getProductByID() {
     // Xử lý thành công
 
     promise.then(function (result) {
-
-        pro ={...result.data.content};
+        // console.log(result.data.content);
+        pro = { ...result.data.content };
+        console.log(pro);
         renderProByID(pro);
         renderProductApi(pro.relatedProducts);
-        // console.log(pro.relatedProducts);
+        console.log(pro.relatedProducts);
+
     })
     // Xử lý thất bại
     promise.catch(function (err) {
@@ -54,9 +56,9 @@ function renderProByID(pro) {
                 <p class="detail__price">${pro.price}$</p>
                 </div>
                 <div class="detail__count row">
-                <button class="btn btn__count col">+</button>
-                <p class="col">1</p>
-                <button class="btn btn__count col">-</button>
+                <button class="btn btn__count__plu col" onclick="plus()">+</button>
+                <p class="col pAmount">1</p>
+                <button class="btn btn__count__mini col" onclick="minus()">-</button>
                 </div>
                 <div class="detail__cart">
                 <button class="btn btn__cart">Add to cart</button>
@@ -64,7 +66,7 @@ function renderProByID(pro) {
             </div>
          `;
 
-  document.querySelector('.detail__main').innerHTML = html;
+    document.querySelector('.detail__main').innerHTML = html;
 }
 
 function renderProductApi(arrProduct) {
@@ -77,7 +79,7 @@ function renderProductApi(arrProduct) {
             html += `
                 <div class="card card__wrap">
                     <a href="./detail.html?product=${item.id}" class="product__card" onclick ="product('${item.id}'")>
-                        <div class="card__item card__item-${item.id}">
+                        <div class="card__item card__item-${item.id} ">
                              <div class="card__img">
                                 <img
                                     src="${item.image}"
@@ -97,8 +99,47 @@ function renderProductApi(arrProduct) {
                     </a>
                 </div>
             `;
+            html += `
+            <div class="card card__wrap">
+                <a href="./detail.html?product=${item.id}" class="product__card" onclick ="product('${item.id}'")>
+                    <div class="card__item card__item-${item.id} ">
+                         <div class="card__img">
+                            <img
+                                src="${item.image}"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                         </div>
+                         <div class="card-body">
+                             <h5 class="card-title">${item.alias}</h5>
+                             <p class="card-text">${item.shortDescription}</p>
+                             <div class="card__des">
+                                 <button class="btn__Buy">Buy Now</button>
+                                 <p class="card__price">${item.price}$</p>
+                             </div>
+                         </div>
+                     </div>
+                </a>
+            </div>
+        `;
         }
-      
+
     })
     document.querySelector('.product__group').innerHTML = html;
+}
+
+window.plus = () => {
+
+    let amount = Number(document.querySelector('.pAmount').innerHTML);
+    amount++;
+    document.querySelector('.pAmount').innerHTML = amount;
+}
+
+window.minus = () => {
+
+    let amount = Number(document.querySelector('.pAmount').innerHTML);
+    if (amount > 1) {
+        amount--;
+    }
+    document.querySelector('.pAmount').innerHTML = amount;
 }
