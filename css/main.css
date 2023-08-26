@@ -243,6 +243,37 @@ header .header__menu .container .navbar .navbar-collapse .nav__menu a:hover::bef
   margin-bottom: 0;
 }
 
+.backToTop {
+  width: 50px;
+  height: 50px;
+  background: #E1B067;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: #000000;
+  transition: all 0.2s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.backToTop:hover {
+  color: #140101;
+  background: #F8B653;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 1;
+}
+
 .carousels {
   height: 530px;
   position: relative;

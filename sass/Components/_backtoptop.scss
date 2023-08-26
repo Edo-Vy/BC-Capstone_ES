@@ -1,0 +1,30 @@
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: $bg-c5-secondarry;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: $text-c1-primary;
+    transition: all 0.2s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+  
+    &:hover {
+      color: $text-c6-secondary;
+      background: $bg-c2-secondary;
+    }
+  }
+  .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cd-top--fade-out {
+    opacity: 1;
+  }
+  
