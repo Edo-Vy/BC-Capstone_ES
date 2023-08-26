@@ -191,20 +191,72 @@
       </div>
       <img class="carousel-bg" src="./images/image 6.png" alt="" />
     </section>
-    <!-- -Product Feature - -->
-    <section class="product">
-      <div class="container product__wrap">
-        <div class="product__title">
-          <h3>-Product Feature -</h3>
+    <!-- Register - -->
+    <section class="register">
+        <div class="container">
+            <form class="row" id="registerForm">
+                <h2 class="register-title">Register</h2>
+                <div class="col-12 col-lg-6 register-item pd-right">
+                  <input class="register-item_input" id="email" placeholder="Email" />
+                  <p class="register-forced">(*)</p>
+                </div>
+                <div class="col-12 col-lg-6 register-item pd-left">
+                  <input class="register-item_input" id="name" placeholder="Name" />
+                  <p class="register-forced right">(*)</p>
+                </div>
+                <div class="col-12 col-lg-6 register-item pd-right">
+                  <input
+                    class="register-item_input"
+                    id="password"
+                    placeholder="Password"
+                  />
+                  <p class="register-forced">(*)</p>
+                </div>
+                <div class="col-12 col-lg-6 register-item pd-left">
+                  <input class="register-item_input" id="phone" placeholder="Phone" />
+                  <p class="register-forced right">(*)</p>
+                </div>
+                <div class="col-12 col-lg-6 register-item pd-right">
+                  <input
+                    class="register-item_input"
+                    id="passwordConfirm"
+                    placeholder="Password Confirm"
+                  />
+                  <p class="register-forced pd-bt">(*)</p>
+                </div>
+                <fieldset class="col-12 col-lg-6 pd-left register-gender" id="gender">
+                  <p>Gender</p>
+                  <!-- <div class=""> -->
+                  <div class="form-check register-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="male"
+                      value="true"
+                      checked
+                    />
+                    <label class="form-check-label" for="male"> Male </label>
+                  </div>
+                  <div class="form-check register-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gridRadios"
+                      id="female"
+                      value="false"
+                    />
+                    <label class="form-check-label" for="female"> Female </label>
+                  </div>
+                </fieldset>
+      
+                <div class="col-0 col-lg-6 pd-right"></div>
+      
+                <div class="col-12 col-lg-6 pd-left register-btnSubmit">
+                  <button type="submit" class="btnSubmit">Submit</button>
+                </div>
+              </form>
         </div>
-        <div class="product__body">
-          <div class="product__group row gy-4">
-            <!-- item 1 -->
-
-            <!--  -->
-          </div>
-        </div>
-      </div>
     </section>
     <!-- footer -->
     <footer class="footer">
@@ -321,7 +373,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- models -->
+    <script src="./model/Infomation.js"></script>
     <!-- controller -->
-    <script src="./controller/index.js"></script>
+    <script src="./controller/register.js"></script>
   </body>
 </html>
