@@ -9,6 +9,7 @@ $bg-c5-secondarry : #E1B067;
 $bg-c6-secondary : #EDF9EE;
 $bg-c7-secondary : #F8F8F8;
 $bg-c8-secondary: #CCCCCC;
+$bg-c9-secondary : #AE18E2;
 
 // ------ text-color
 $text-c1-primary: #000000;
@@ -21,6 +22,7 @@ $text-c6-secondary : #140101;
 $text-c7-secondary : #1E1D1D;
 $text-c8-secondary: #FFFCFC;
 $text-c9-secondary : #F8F8F8;
+$text-c10-secondary : #F50E0E;
 // ------ font size
 
 $fs-light : 16px;
@@ -33,3 +35,10 @@ $fw-light : 300;
 $fw-regular : 400;
 $fw-medium : 500;
 $fw-bold : 700;
+
+
+//---- break points
+$bp-xl: 1200px;
+$bp-lg: 992px;
+$bp-md: 768px;
+$bp-sm: 576px;

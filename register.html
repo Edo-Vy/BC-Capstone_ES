@@ -1,12 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoes Shop</title>
+    <!-- BS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header__main">
+        <div class="container">
+          <a href="#" class="header__logo left">
+            <img src="./images/image 3.png" alt="" />
+          </a>
+          <div class="header__nav right">
+            <a class="nav__car" href="#">
+              <img src="./images/Group 1.png" alt="" />
+            </a>
+            <a class="nav__login" href="#">Login</a>
+            <a class="nav__reg" href="./register.html">Register</a>
+          </div>
+        </div>
+      </div>
+      <!-- header menu -->
+      <div class="header__menu">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="menu__wrap">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav__menu">
+                  <a class="nav-link active" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="./index.html">Men</a>
+                  <a class="nav-link" href="./index.html">Woman</a>
+                  <a class="nav-link" href="./index.html">Kid</a>
+                  <a class="nav-link" href="./index.html">Sport</a>
+                  <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Carousel -->
+    <section class="carousels">
+      <div class="carousel-layout container">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide carousel__wrap"
+        >
+          <div class="carousel-indicators carousel__circle">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="carousel__circleItem active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="carousel__circleItem"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="carousel__circleItem"
+            ></button>
+          </div>
+          <div class="carousel-inner carousel-layout-pd carousel__layoutSlider">
+            <div class="carousel-overflow overflow-hidden">
+              <!-- item 1 -->
+              <div
+                class="carousel-item carousel__layoutItem row active"
+                data-bs-interval="10000"
+              >
+                <div class="carousel__img col-12 col-lg-9">
+                  <img
+                    src="./images/image 4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div
+                  class="carousel-caption carousel__content d-none d-md-block col-12 col-lg-3"
+                >
+                  <h5>Product name</h5>
+                  <p>Product description .....</p>
+                  <div class="button__buy">
+                    <button class="btn btnBuy">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div
+                class="carousel-item carousel__layoutItem row"
+                data-bs-interval="2000"
+              >
+                <div class="carousel__img col-12 col-lg-9">
+                  <img
+                    src="./images/image 4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div
+                  class="carousel-caption carousel__content d-none d-md-block col-12 col-lg-3"
+                >
+                  <h5>Product name</h5>
+                  <p>Product description .....</p>
+                  <div class="button__buy">
+                    <button class="btn btnBuy">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="carousel-item carousel__layoutItem row">
+                <div class="carousel__img col-12 col-lg-9">
+                  <img
+                    src="./images/image 4.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div
+                  class="carousel-caption carousel__content d-none d-md-block col-12 col-lg-3"
+                >
+                  <h5>Product name</h5>
+                  <p>Product description .....</p>
+                  <div class="button__buy">
+                    <button class="btn btnBuy">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev justify-content-start"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel__icon prev-icon" aria-hidden="true">
+              <img src="./images/Polygon 2.png" alt="" />
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next justify-content-end"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel__icon next-icon" aria-hidden="true">
+              <img src="./images/Polygon 1.png" />
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <img class="carousel-bg" src="./images/image 6.png" alt="" />
+    </section>
+    <!-- Register - -->
+    <section class="register">
+      <div class="container">
+        <form class="row" id="registerForm">
+          <h2 class="register-title">Register</h2>
+          <div class="col-12 col-lg-6 register-item pd-right">
+            <input class="register-item_input" id="email" placeholder="Email" />
+            <p class="register-forced">(*)</p>
+          </div>
+          <div class="col-12 col-lg-6 register-item pd-left">
+            <input class="register-item_input" id="name" placeholder="Name" />
+            <p class="register-forced right">(*)</p>
+          </div>
+          <div class="col-12 col-lg-6 register-item pd-right">
+            <input
+              class="register-item_input"
+              id="password"
+              placeholder="Password"
+            />
+            <p class="register-forced">(*)</p>
+          </div>
+          <div class="col-12 col-lg-6 register-item pd-left">
+            <input class="register-item_input" id="phone" placeholder="Phone" />
+            <p class="register-forced right">(*)</p>
+          </div>
+          <div class="col-12 col-lg-6 register-item pd-right">
+            <input
+              class="register-item_input"
+              id="passwordConfirm"
+              placeholder="Password Confirm"
+            />
+            <p class="register-forced pd-bt">(*)</p>
+          </div>
+          <fieldset class="col-12 col-lg-6 pd-left register-gender" id="gender">
+            <p>Gender</p>
+            <!-- <div class=""> -->
+            <div class="form-check register-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="male"
+                value="true"
+                checked
+              />
+              <label class="form-check-label" for="male"> Male </label>
+            </div>
+            <div class="form-check register-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gridRadios"
+                id="female"
+                value="false"
+              />
+              <label class="form-check-label" for="female"> Female </label>
+            </div>
+          </fieldset>
+
+          <div class="col-0 col-lg-6 pd-right"></div>
+
+          <div class="col-12 col-lg-6 pd-left register-btnSubmit">
+            <button type="submit" class="btnSubmit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <!--  -->
+      <div class="footer-group">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>GET HELP</h2>
+                <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Shopping</a></li>
+                  <li><a href="#">NIKEiD</a></li>
+                  <li><a href="#">Nike+</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>ORDERS</h2>
+                <ul>
+                  <li><a href="#">Payment options</a></li>
+                  <li><a href="#">Shipping and delivery</a></li>
+                  <li><a href="#">Returns</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item">
+                <h2>REGISTER</h2>
+                <ul>
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">Learn more</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom -->
+      <div class="footer-group footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>EMAIL SIGN UP</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Be the first to knnow about new products and special
+                      offers.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">Sign up now</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item footer-bd">
+                <h2>GIFT CARDS</h2>
+                <ul>
+                  <li><a href="#">Give the gift that always fits.</a></li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">View cards</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footer-item">
+                <h2>SOTRES NEAR YOU</h2>
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Locate a Nike retail store or authorized retailer.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="footer-item-text-red" href="#">Search</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- models -->
+    <script src="./model/Infomation.js"></script>
+    <!-- controller -->
+    <script src="./controller/register.js"></script>
+  </body>
 </html>
